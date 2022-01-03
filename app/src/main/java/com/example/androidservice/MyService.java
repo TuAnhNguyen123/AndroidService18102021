@@ -41,7 +41,7 @@ public class MyService extends Service {
         Log.d("BBB","OnStartCommand");
         mNotification = createNotification(this,"Xử lý");
         mNotificationManager.notify(1,mNotification);
-        return START_REDELIVER_INTENT;
+        return START_NOT_STICKY;
     }
 
     @Override
